@@ -1,4 +1,20 @@
 <div class="container-fluid">
 <h1>Welcome To Social Media Application</h1>
 <p>Find me in app/views/welcome/index.html.erb</p>
+
+<!-- <% @socialMediaProviders.each do |smp| %>
+  <%= div_for(smp, class: "container-fluid") do %>
+    <%= smp.name %>
+    <%= smp.base_url %>
+  <% end %>
+<% end %> -->
+
+<table class="table">
+  <th>Name</th>
+<% @socialMediaProviders.each do |smp| %>
+  <tr>
+    <td><%= smp.name%></td>
+  </tr>
+<% end %>
+</table
 </div>
